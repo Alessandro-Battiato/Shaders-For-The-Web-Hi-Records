@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Halibut";
+  src: url(halibut-serif.ttf);
+}
+
+@font-face {
+  font-family: Apfel Grotezk;
+  src: url(apfelgrotezk.woff2);
+}
+
+body {
+	font-family: Apfel Grotezk;
+	font-size: calc(16px + 0.5vw);
+	line-height: 1.25;
+	
+	background-color: #ffffff;
+	color: #58585d;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  text-align: center;
+  padding: 40px;
+  z-index: 1;
+}
+
+h2, h3 {
+  font-family: Halibut;
+  font-size: calc(24px + 6vw);
+  font-variation-settings: "wdth" 10, "wght" 100;
+  line-height: 0.9;
+}
+
+h2 {
+  color: #000000;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section {
+  height: 100vh;
+  padding: 48px 48px 96px 48px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  border-bottom: 1px solid #000000;
+}
+
+div.canvas-holder {
+  position: sticky;
+  top: 0;
+  
+  height: 100vh;
+  background-color: #000000;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  
+}
+
+div.canvas-holder canvas {
+  max-width: 700px;
+  max-height: 700px;
+  width: 100%;
+  height: 100%;
+}
